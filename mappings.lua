@@ -1,0 +1,41 @@
+---@type MappingsTable
+local M = {}
+
+local default_opts = { nowait = true }
+
+M.general = {
+n = {
+  [";"] = { ":", "enter command mode", opts = { nowait = true } },
+  ["+"] = {"<c-w>+", "increase vertically", default_opts },
+  ["_"] = {"<c-w>-", "decrease vertically" , default_opts },
+  ["="] = {"<c-w>>", "increase horizontally", default_opts },
+  ["-"] = {"<c-w><", "decrease horizontally" , default_opts },
+  ["<leader>gv"] = { "`[v`]", "highlight last inserted text ", default_opts }
+},
+}
+
+M.shade = {
+  n = {
+    ["<leader>s"] = {
+      function()
+        require("shade").toggle()
+      end,
+
+      "toggle shade.nvim",
+    },
+  },
+}
+
+M.nvterm = {
+  n = {
+    ["<leader>gc"] = {
+      function()
+        require("nvterm.terminal").send("clear && g++ -o out " .. vim.fn.expand "%" .. " && ./out", "vertical")
+      end,
+
+      "compile & run a cpp file",
+    },
+  },
+}
+
+return M
