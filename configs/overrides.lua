@@ -58,7 +58,7 @@ M.mason = {
     "mypy",
     "ruff",
     "black",
-    "debugpy",
+    "debugpy",
 
     "julia-lsp",
     "ruff-lsp",
