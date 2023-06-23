@@ -41,7 +41,7 @@ M.nvterm = {
 M.dap = {
   plugin = true,
   n = {
-    ["<leader>db"] = { "<cmd> DapToggleBreakpoint <CR>" },
+    ["<leader>db"] = { "<cmd> DapToggleBreakpoint <CR>", "Toggle breakpoint" },
   },
 }
 
@@ -52,6 +52,7 @@ M.dap_python = {
       function()
         require("dap-python").test_method()
       end,
+      "DAP test method",
     },
   },
 }

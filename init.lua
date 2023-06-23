@@ -5,8 +5,8 @@ vim.opt.title = true
 
 -- local autocmd = vim.api.nvim_create_autocmd
 
--- Auto resize panes when resizing nvim window
--- autocmd("VimResized", {
+-- auto resize panes when resizing nvim window
+-- autocmd("vimresized", {
 --   pattern = "*",
 --   command = "tabdo wincmd =",
 -- })
