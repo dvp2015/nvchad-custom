@@ -53,6 +53,13 @@ M.mason = {
     "clangd",
     "clang-format",
 
+    --python
+    "pyright",
+    "mypy",
+    "ruff",
+    "black",
+    "debugpy",
+
     "julia-lsp",
     "ruff-lsp",
   },
