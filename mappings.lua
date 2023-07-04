@@ -57,4 +57,11 @@ M.dap_python = {
   },
 }
 
+-- Extras example
+M.symbols_outline = {
+  n = {
+    ["<leader>cs"] = { "<cmd>SymbolsOutline<cr>", "Symbols Outline" },
+  },
+}
+
 return M
