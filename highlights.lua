@@ -4,10 +4,13 @@
 
 local M = {}
 
+-- Use https://imagecolorpicker.com to select a color code
+
 ---@type Base46HLGroupsList
 M.override = {
   Comment = {
     italic = true,
+    fg = "#647f62",
   },
 }
 
