@@ -10,6 +10,8 @@ M.ui = {
     "everforest",
     "vscode_dark",
     "onenord",
+    "onedark",
+    "one_light"
   },
   statusline = {
     theme = "vscode",
