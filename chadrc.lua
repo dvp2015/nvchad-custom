@@ -5,9 +5,9 @@ local M = {}
 local highlights = require "custom.highlights"
 
 M.ui = {
-  theme = "everforest",
+  theme = "onedark",
   theme_toggle = {
-    "everforest",
+    "onedark",
     "vscode_dark",
     "onenord",
     "onedark",

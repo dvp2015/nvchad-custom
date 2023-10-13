@@ -11,6 +11,7 @@ M.general = {
     ["="] = { "<c-w>>", "increase horizontally", default_opts },
     ["-"] = { "<c-w><", "decrease horizontally", default_opts },
     ["<leader>gv"] = { "`[v`]", "highlight last inserted text ", default_opts },
+    ["<leader>tk"] = { "<cmd> Telescope keymaps <CR>", "show key mapping", default_opts },
   },
 }
 
