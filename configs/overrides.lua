@@ -50,37 +50,44 @@ M.mason = {
     "shellcheck",
     "bash-language-server",
 
+    -- C++
     "clangd",
     "clang-format",
 
-    --python
+    -- python
     "pyright",
     "mypy",
     "ruff",
     "black",
     "debugpy",
 
+    -- sql
+    "sqlfluff",
+    "sqlls",
+
+    -- yaml
+    "yamllint",
+    "yamlfmt",
+    "yamlls",
+
+    -- toml
+    "taplo",
+
+    -- text, markdown
+    "textlint",
+
+    -- other
     "julia-lsp",
+    "misspell",
     "ruff-lsp",
+    "vim-language-server",
   },
 }
 
 -- git support in nvimtree
 M.nvimtree = {
-  filters = {
-    dofiles = false,
-  },
-  git = {
-    enable = true,
-  },
-
   renderer = {
     highlight_git = true,
-    icons = {
-      show = {
-        git = true,
-      },
-    },
   },
 }
 

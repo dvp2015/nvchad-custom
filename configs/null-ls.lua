@@ -19,6 +19,15 @@ local sources = {
   -- cpp
   b.formatting.clang_format,
 
+  -- sql
+  b.formatting.sqlfluff,
+
+  -- toml
+  b.formatting.taplo,
+
+  -- text & markdown
+  b.formatting.textlint,
+
   -- python et all
   -- https://beta.ruff.rs/docs/editor-integrations/#language-server-protocol-unofficial
   -- The Perfect Noevim setup for Python: https://www.youtube.com/watch?v=4BnVeOUeZxc
