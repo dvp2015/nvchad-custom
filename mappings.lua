@@ -65,4 +65,16 @@ M.symbols_outline = {
   },
 }
 
+M.zen = {
+  n = {
+    ["<leader>zn"] = { "<cmd> TZNarrow <CR>", "Zen Narrow", default_opts },
+    ["<leader>zf"] = { "<cmd> TZFocus <CR>", "Zen Focus", default_opts },
+    ["<leader>zm"] = { "<cmd> TZMinimalist <CR>", "Zen Minimalist", default_opts },
+    ["<leader>za"] = { "<cmd> TZAtaraxis <CR>", "Zen Ataraxis", default_opts },
+  },
+  v = {
+    ["<leader>zn"] = { "<cmd> '<,'>TZNarrow <CR>", "Zen Narrow", default_opts },
+  },
+}
+
 return M

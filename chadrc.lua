@@ -5,12 +5,12 @@ local M = {}
 local highlights = require "custom.highlights"
 
 M.ui = {
-  theme = "onedark",
+  theme = "pastelbeans",
   theme_toggle = {
-    "onedark",
+    "pastelbeans",
     "vscode_dark",
     "onenord",
-    "onedark",
+    "pastelbeans",
     "one_light"
   },
   statusline = {

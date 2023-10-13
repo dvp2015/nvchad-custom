@@ -1,4 +1,4 @@
-local overrides = require("custom.configs.overrides")
+local overrides = require "custom.configs.overrides"
 
 ---@type NvPluginSpec[]
 local plugins = {
@@ -25,7 +25,7 @@ local plugins = {
   -- override plugin configs
   {
     "williamboman/mason.nvim",
-    opts = overrides.mason
+    opts = overrides.mason,
   },
 
   {
@@ -88,6 +88,23 @@ local plugins = {
         exclude_filetypes = { "NvimTree" },
       }
     end,
+  },
+
+  {
+    "Pocco81/TrueZen.nvim",
+    -- cmd = { "TZAtaraxis", "TZMinimalist" },
+    -- config = function()
+    --   require "custom.configs.truezen" -- just an example path
+    -- end,
+    lazy = false,
+    opts = {
+      integrations = {
+        kitty = {
+          enabled = true,
+          font = "+4", -- increment font size for Kitty
+        },
+      },
+    },
   },
 
   -- I rarely use shade.nvim/autosave.nvim so made commands to enable them
