@@ -5,10 +5,3 @@ autocmd("VimResized", {
   pattern = "*",
   command = "tabdo wincmd =",
 })
-
-
-
-autocmd("BufWritePre", {
-  pattern = "*",
-  command = "lua vim.lsp.buf.format()",
-})
